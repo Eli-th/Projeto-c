@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    double A,B, total;
+    
+    scanf ("%lf", &A);
+    
+    B = 3.14159;
+    total = (4/3.0) * B * pow(A,3);
+    
+    printf ("VOLUME = %.3lf\n", total);
+    return 0;
+}
