@@ -1,0 +1,32 @@
+#include <stdio.h>
+ 
+int main() {
+    int val,resto,cem,cin,vin,dez,cinc,doi,um;
+    
+    scanf ("%d", &val);
+    
+    resto = val;
+    cem = resto/100;
+    resto = resto - (cem*100);
+    cin = resto/50;
+    resto = resto - (cin*50);
+    vin = resto/20;
+    resto = resto - (vin*20);
+    dez = resto/10;
+    resto = resto - (dez*10);
+    cinc = resto/5;
+    resto = resto - (cinc*5);
+    doi = resto/2;
+    resto = resto - (doi*2);
+    
+    printf ("%d\n",val);
+    printf ("%d nota(s) de R$ 100,00\n",cem);
+    printf ("%d nota(s) de R$ 50,00\n",cin);
+    printf ("%d nota(s) de R$ 20,00\n",vin);
+    printf ("%d nota(s) de R$ 10,00\n",dez);
+    printf ("%d nota(s) de R$ 5,00\n",cinc);
+    printf ("%d nota(s) de R$ 2,00\n",doi);
+    printf ("%d nota(s) de R$ 1,00\n",resto);
+    
+    return 0;
+}
